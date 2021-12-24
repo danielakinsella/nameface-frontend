@@ -9,7 +9,7 @@ const people = [
       name: 'Daniela Eichner',
       role: 'Technology',
       imageUrl:
-        'danielaeichner.jpg',
+        '/danielaeichner.jpg',
       twitterUrl: 'https://twitter.com/daniela',
       linkedinUrl: 'https://www.linkedin.com/in/danielaeichner',
       email: 'daniela@nameface.com',
@@ -19,7 +19,7 @@ const people = [
         name: 'Steve Eichner',
         role: 'Creative',
         imageUrl:
-          'steveeichner.jpg',
+          '/steveeichner.jpg',
         twitterUrl: 'https://twitter.com/steveeichner',
         linkedinUrl: 'https://www.linkedin.com/in/stephen-eichner-b7146195',
         email: 'steve@nameface.com',
@@ -40,12 +40,14 @@ export default function Index() {
             >
               <div className="flex items-center flex-1">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
+                  <a href="https://nameface.com">
                     <span className="sr-only">NameFace</span>
                     <Image
                       className="h-8 w-auto sm:h-10"
-                      src="nameface-logo.png"
-                      alt=""
+                      src="/nameface-logo.png"
+                      alt="NameFace"
+                      width="248"
+                  height="40"
                     />
                   </a>
                  
@@ -81,8 +83,10 @@ export default function Index() {
                     
                     <Image
                       className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                      src="startup.svg"
+                      src="/startup.svg"
                       alt=""
+                      width="1030"
+                      height="788"
                     />
                   </div>
                 </div>
@@ -104,8 +108,8 @@ export default function Index() {
             {people.map((person) => (
               <li key={person.name}>
                 <div className="space-y-4">
-                  <div className="aspect-w-3 aspect-h-2">
-                    <Image className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                  <div className="aspect-w-3 aspect-h-2" style={{maxHeight:400}}>
+                    <Image className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" width="600" height="600"/>
                   </div>
 
                   <div className="space-y-2">
@@ -155,8 +159,10 @@ export default function Index() {
             <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
               <Image
                 className="w-full h-full object-cover"
-                src="workflow.svg"
+                src="/workflow.svg"
                 alt=""
+                width="1030"
+                      height="788"
               />
               <div
                 aria-hidden="true"
@@ -197,8 +203,10 @@ export default function Index() {
               <div className="space-y-8 xl:col-span-1">
                 <Image
                   className="h-10"
-                  src="nameface-logo.png"
+                  src="/nameface-logo.png"
                   alt="NameFace"
+                  width="248"
+                  height="40"
                 />
                 <p className="text-gray-500 text-base">
                   Technology for Artists
