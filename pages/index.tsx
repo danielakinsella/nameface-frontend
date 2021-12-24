@@ -1,16 +1,6 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import {
-  CloudUploadIcon,
-  CogIcon,
-  LockClosedIcon,
-  MenuIcon,
-  RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
-  XIcon,
-} from '@heroicons/react/outline'
-import { ChevronRightIcon, ExternalLinkIcon } from '@heroicons/react/solid'
+import { Popover } from '@headlessui/react'
+import { ExternalLinkIcon } from '@heroicons/react/solid'
+import Image from "next/image";
 
 
 
@@ -52,7 +42,7 @@ export default function Index() {
                 <div className="flex items-center justify-between w-full md:w-auto">
                   <a href="#">
                     <span className="sr-only">NameFace</span>
-                    <img
+                    <Image
                       className="h-8 w-auto sm:h-10"
                       src="nameface-logo.png"
                       alt=""
@@ -89,7 +79,7 @@ export default function Index() {
                 <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
                   <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
                     
-                    <img
+                    <Image
                       className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="startup.svg"
                       alt=""
@@ -115,7 +105,7 @@ export default function Index() {
               <li key={person.name}>
                 <div className="space-y-4">
                   <div className="aspect-w-3 aspect-h-2">
-                    <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                    <Image className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
                   </div>
 
                   <div className="space-y-2">
@@ -163,7 +153,7 @@ export default function Index() {
           {/* CTA Section */}
           <div className="relative bg-gray-900">
             <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-              <img
+              <Image
                 className="w-full h-full object-cover"
                 src="workflow.svg"
                 alt=""
@@ -205,7 +195,7 @@ export default function Index() {
           <div className="max-w-md mx-auto pt-12 px-4 sm:max-w-7xl sm:px-6 lg:pt-16 lg:px-8">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <div className="space-y-8 xl:col-span-1">
-                <img
+                <Image
                   className="h-10"
                   src="nameface-logo.png"
                   alt="NameFace"
