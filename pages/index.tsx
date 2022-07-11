@@ -70,21 +70,6 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="bg-gray-200">
-      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
-        <div className="space-y-12">
-          <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-nameface">Our Team</h2>
-            
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-          
-
-
           
           {/* CTA Section */}
           <div className="relative bg-gray-900">
@@ -151,7 +136,7 @@ export default function Index() {
               </div>
             </div>
             <div className="mt-12 border-t border-gray-200 py-8">
-              <p className="text-base text-gray-400 xl:text-center">&copy;NameFace, LLC. All rights reserved.</p>
+              <p className="text-base text-gray-400 xl:text-center">NameFace, LLC. All rights reserved.</p>
             </div>
           </div>
         </footer>
